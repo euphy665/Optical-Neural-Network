@@ -1,4 +1,13 @@
 %% gsw_output -  Calculate the phase pattern to generate multiple spot pattern using phase-only SLM.
+
+% Example to run this program, type the following word in the command window 
+% under the folder of gsw_output
+% phase = gsw_output([200,200],ones(10,10),10)
+% During the iteration, you can see the nn = 1 to nn = 10
+% Then type in the command window:
+% imshow(phase / 2 /pi)
+% You could get the phase mask for the 10x10 beam array
+
 % The input parameters: size_SLM is the size of SLM, which is presented as
 % a vector with two elements. e.g. size_SLM=[1920,1080] for a 1k resolution
 % weight is the beam array intensity, for example one(10,10) for a 10x10
